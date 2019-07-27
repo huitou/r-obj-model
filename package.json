@@ -8,7 +8,10 @@
   },
   "author": "Fuhang Wang <3.riverside.swe@gmail.com>",
   "license": "MIT",
+  "repository": "https://github.com/huitou/r-obj-model",
   "dependencies": {
+    "r-socs-core": "git+https://github.com/huitou/r-socs-core.git",
+    "ramda": "^0.26.1",
     "react": "^16.8.4"
   },
   "devDependencies": {
