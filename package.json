@@ -1,7 +1,7 @@
 {
-  "name": "r-form-model",
+  "name": "r-obj-model",
   "version": "0.0.1",
-  "description": "R-SoCs form model library",
+  "description": "R-SoCs obj model library",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
