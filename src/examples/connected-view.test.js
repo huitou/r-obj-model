@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from "enzyme";
 import { mergeDeepRight } from 'ramda';
 
-import ConnectedView from './connected-view';
+import ConnectedView, { connect_name } from './connected-view';
 import BasicView from './basic-view';
 
 const initial = {
@@ -50,15 +50,15 @@ describe('ConnectedView', () => {
 
         it('has the Target Component operable with injected props', async () => {
             expect(wrapper.find(BasicView).length).toBe(1);
-            expect(wrapper.find(BasicView).props().hifu.value).toEqual(initial);
+            expect(wrapper.find(BasicView).props()[connect_name].hifu.value).toEqual(initial);
 
-            await wrapper.find(BasicView).props().hefu.change(change);
+            await wrapper.find(BasicView).props()[connect_name].hefu.change(change);
             wrapper.update();
-            expect(wrapper.find(BasicView).props().hifu.value).toEqual(mergeDeepRight(initial, change));
+            expect(wrapper.find(BasicView).props()[connect_name].hifu.value).toEqual(mergeDeepRight(initial, change));
 
-            await wrapper.find(BasicView).props().hefu.reset();
+            await wrapper.find(BasicView).props()[connect_name].hefu.reset();
             wrapper.update();
-            expect(wrapper.find(BasicView).props().hifu.value).toEqual(initial);
+            expect(wrapper.find(BasicView).props()[connect_name].hifu.value).toEqual(initial);
         });
     });
 });
