@@ -83,4 +83,4 @@ _defineProperty(ObjectModel, "defaultProps", {
 */
 const CldObjectModel = withCollector(ObjectCollector)(ObjectModel);
 
-export { CldObjectModel as NewlyDesignedModel };
+export { CldObjectModel };
