@@ -6,7 +6,7 @@ export default [
   // CommonJS
   {
     input: 'src/main.js',
-    output: { file: 'lib/r-form-model.js', format: 'cjs', indent: false },
+    output: { file: 'lib/r-obj-model.js', format: 'cjs', indent: false },
     external: [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.peerDependencies || {}),
@@ -18,7 +18,7 @@ export default [
   // ES
   {
     input: 'src/main.js',
-    output: { file: 'es/r-form-model.js', format: 'es', indent: false },
+    output: { file: 'es/r-obj-model.js', format: 'es', indent: false },
     external: [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.peerDependencies || {}),
