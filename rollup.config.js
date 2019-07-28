@@ -24,6 +24,6 @@ export default [
       ...Object.keys(pkg.peerDependencies || {}),
       'prop-types',
     ],
-    plugins: [babel(), resolve()]
+    plugins: [babel()]
   }
 ]
