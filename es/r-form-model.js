@@ -74,6 +74,13 @@ _defineProperty(ObjectModel, "defaultProps", {
   initial: {}
 });
 
-const CdObjectModel = withCollector(ObjectCollector)(ObjectModel);
+/*
+    Collected Object Model.
 
-export { CdObjectModel as NewlyDesignedModel };
+    Copyright (c) 2019 Riverside Software Engineering Ltd. All rights reserved.
+
+    Licensed under the MIT License. See LICENSE file in the project root for full license information.
+*/
+const CldObjectModel = withCollector(ObjectCollector)(ObjectModel);
+
+export { CldObjectModel as NewlyDesignedModel };
