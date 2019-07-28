@@ -11,6 +11,6 @@ import { withCollector } from 'r-socs-core';
 import ObjectCollector from './collector';
 import ObjectModel from './component';
 
-const CdObjectModel = withCollector(ObjectCollector)(ObjectModel);
+const CldObjectModel = withCollector(ObjectCollector)(ObjectModel);
 
-export default CdObjectModel;
+export default CldObjectModel;
