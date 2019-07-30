@@ -32,6 +32,6 @@
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-terser": "^4.0.4"
   },
-  "main": "lib/r-socs-core.js",
-  "module": "es/r-socs-core.js"
+  "main": "lib/r-obj-model.js",
+  "module": "es/r-obj-model.js"
 }
