@@ -81,6 +81,6 @@ _defineProperty(ObjectModel, "defaultProps", {
 
     Licensed under the MIT License. See LICENSE file in the project root for full license information.
 */
-const CldObjectModel = withCollector(ObjectCollector)(ObjectModel);
+const CollectedObjectModel = withCollector(ObjectCollector)(ObjectModel);
 
-export { CldObjectModel };
+export { CollectedObjectModel };

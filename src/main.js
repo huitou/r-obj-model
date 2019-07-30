@@ -6,6 +6,6 @@
     Licensed under the MIT License. See LICENSE file in the project root for full license information.
 */
 
-import CldObjectModel from './obj-model/index';
+import CollectedObjectModel from './obj-model/index';
 
-export { CldObjectModel };
+export { CollectedObjectModel };
