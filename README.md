@@ -15,11 +15,11 @@ To make separation of concern practical through composition easier than HoC.
 ```javascript
 {
     hifu: {
-        value: () => :object,            // state managed by the model.
+        value: object,                    // state managed by the model.
     },
     hefu: {
-        change: (obj :object) => void,   // mergeDeepRight(value, obj).
-        reset: () => void,               // reset value to {}.
+        change(newValue :object): void,   // mergeDeepRight(value, newValue).
+        reset(): void,                    // reset value to {}.
     },
 },
 ```
@@ -51,8 +51,10 @@ Injected props are just normal props.
 
 ## Dependnecy:
 
+```javascript
 {
     "r-socs-core": "^0.0.1",
     "ramda": "^0.26.1",
     "react": "^16.8.4"
 }
+```
