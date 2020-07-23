@@ -1,5 +1,5 @@
 import { Collector, withCollector } from 'r-socs-core';
-import { Component } from 'react';
+import React from 'react';
 import { object } from 'prop-types';
 import { mergeDeepRight } from 'ramda';
 
@@ -32,7 +32,7 @@ _defineProperty(ObjectCollector, "handleMap", {
   }
 });
 
-class ObjectModel extends Component {
+class ObjectModelComponent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -66,21 +66,21 @@ class ObjectModel extends Component {
 
 }
 
-_defineProperty(ObjectModel, "propTypes", {
+_defineProperty(ObjectModelComponent, "propTypes", {
   initial: object
 });
 
-_defineProperty(ObjectModel, "defaultProps", {
+_defineProperty(ObjectModelComponent, "defaultProps", {
   initial: {}
 });
 
 /*
-    Collected Object Model.
+    Object Model.
 
     Copyright (c) 2019-2020 Riverside Software Engineering Ltd. All rights reserved.
 
     Licensed under the MIT License. See LICENSE file in the project root for full license information.
 */
-const CollectedObjectModel = withCollector(ObjectCollector)(ObjectModel);
+const ObjectModel = withCollector(ObjectCollector)(ObjectModelComponent);
 
-export { CollectedObjectModel };
+export { ObjectModel };

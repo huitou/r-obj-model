@@ -1,16 +1,16 @@
 /*
-    Object Model.
+    Object Model Component.
 
     Copyright (c) 2019-2020 Riverside Software Engineering Ltd. All rights reserved.
 
     Licensed under the MIT License. See LICENSE file in the project root for full license information.
 */
 
-import React, { Component } from 'react';
+import React from 'react';
 import { object } from 'prop-types';
 import { mergeDeepRight } from 'ramda';
 
-class ObjectModel extends Component {
+class ObjectModelComponent extends React.Component {
     static propTypes = {
         initial: object
     };
@@ -42,4 +42,4 @@ class ObjectModel extends Component {
     }
 }
 
-export default ObjectModel;
+export default ObjectModelComponent;
