@@ -1,5 +1,5 @@
 /*
-    Object Model Test.
+    Object Model Component Test.
 
     Copyright (c) 2019-2020 Riverside Software Engineering Ltd. All rights reserved.
 
@@ -9,7 +9,7 @@
 import React from 'react';
 import { shallow } from "enzyme";
 
-import ObjectModel from './component';
+import ObjectModelComponent from './component';
 
 const initial = {
     a: 'a',
@@ -26,11 +26,11 @@ const initialised_state = {
     value: { ...initial }
 };
 
-describe('ObjectModel', () => {
+describe('ObjectModelComponent', () => {
     describe('when mounted without initial props,', () => {
         let wrapper
         beforeEach(() => {
-            wrapper = shallow(<ObjectModel />);
+            wrapper = shallow(<ObjectModelComponent />);
         })
 
         it('has a clean initial state', () => {
@@ -52,7 +52,7 @@ describe('ObjectModel', () => {
     describe('when mounted with an initial props,', () => {
         let wrapper
         beforeEach(() => {
-            wrapper = shallow(<ObjectModel initial={initial} />);
+            wrapper = shallow(<ObjectModelComponent initial={initial} />);
         })
 
         it('has an initialised state', () => {

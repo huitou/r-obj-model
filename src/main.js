@@ -6,6 +6,6 @@
     Licensed under the MIT License. See LICENSE file in the project root for full license information.
 */
 
-import CollectedObjectModel from './obj-model/index';
+import ObjectModel from './obj-model/index';
 
-export { CollectedObjectModel };
+export { ObjectModel };
