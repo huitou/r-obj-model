@@ -18,7 +18,7 @@ To make separation of concern practical through composition easier than HoC.
         value: object,                        // state managed by the model.
     },
     hefu: {
-        change: (newValue :object) => void,   // mergeDeepRight(value, newValue).
+        change: (newValue: object) => void,   // mergeDeepRight(value, newValue).
         reset: () => void,                    // reset value to {}.
     },
 },
