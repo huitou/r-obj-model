@@ -4,7 +4,9 @@ Separation of Concerns
 
 ## What does the library do?
 
-It provides a specific model/service whose instance may be injected as props to a consumer component.
+It provides a specific model/service to be used by a consumer component through injected props.
+
+In other words, a component may use the model/service logic by connect it and through provided props.
 
 ## Why such a library?
 
@@ -13,7 +15,7 @@ To make separation of concern practical through composition easier than HoC.
 ## What props are offered?
 
 ```javascript
-{
+modelName: {
     hifu: {
         value: object,                        // state managed by the model.
     },
