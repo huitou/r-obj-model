@@ -47,6 +47,8 @@ const NAME = 'NameOfService';
 const ServicedComponent = connect(ObjectModel, NAME)(TargetComponent);
 ```
 
+ObjectModel optionally expects a props called `initial` which provides initial object value. In case it is not present, the initial value is set to `{}`.
+
 ### Use injected props
 
 Injected props are just normal props.
