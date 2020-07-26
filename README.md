@@ -21,10 +21,16 @@ modelName: {
     },
     hefu: {
         change: (newValue: object) => void,   // mergeDeepRight(value, newValue).
-        reset: () => void,                    // reset value to {}.
+        reset: () => void,                    // reset value to initial.
     },
 },
 ```
+
+## What props are expected?
+
+ObjectModel optionally expects a props called `initial` which provides initial object value.
+
+In case it is not present, the initial value is set to `{}`.
 
 ## How to use it?
 
@@ -46,8 +52,6 @@ const NAME = 'NameOfService';
 
 const ServicedComponent = connect(ObjectModel, NAME)(TargetComponent);
 ```
-
-ObjectModel optionally expects a props called `initial` which provides initial object value. In case it is not present, the initial value is set to `{}`.
 
 ### Use injected props
 
