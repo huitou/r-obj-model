@@ -28,7 +28,7 @@ modelName: {
 
 ## What props are expected?
 
-ObjectModel optionally expects a props called `initial` which provides initial object value.
+ObjectModel optionally expects a prop called `initial` which provides initial object value.
 
 In case it is not present, the initial value is set to `{}`.
 
