@@ -61,7 +61,7 @@ Injected props are just normal props.
 
 ```javascript
 {
-    "r-socs-core": "^0.0.1",
+    "r-socs-core": "^0.0.2",
     "ramda": "^0.26.1",
     "react": "^16.8.4"
 }
