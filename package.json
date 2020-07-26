@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": "https://github.com/huitou/r-obj-model",
   "dependencies": {
-    "r-socs-core": "^0.0.1",
+    "r-socs-core": "^0.0.2",
     "ramda": "^0.26.1",
     "react": "^16.8.4"
   },
