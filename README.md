@@ -21,16 +21,22 @@ modelName: {
     },
     hefu: {
         change: (newValue: object) => void,   // mergeDeepRight(value, newValue).
-        reset: () => void,                    // reset value to {}.
+        reset: () => void,                    // reset value to initial.
     },
 },
 ```
+
+## What props are expected?
+
+ObjectModel optionally expects a prop called `initial` which provides initial object value.
+
+In case it is not present, the initial value is set to `{}`.
 
 ## How to use it?
 
 ### Install the library
 
-npm install --save r-obj-model
+`npm install --save r-obj-model`
 
 ### Import artefacts of the libary
 
