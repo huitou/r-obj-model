@@ -30,7 +30,7 @@ modelName: {
 
 ### Install the library
 
-npm install --save r-obj-model
+`npm install --save r-obj-model`
 
 ### Import artefacts of the libary
 
