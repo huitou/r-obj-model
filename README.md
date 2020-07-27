@@ -56,7 +56,8 @@ const propsMap = (props) => ({
 const ServicedComponent = connect(ObjectModel, NAME, propsMap)(TargetComponent);
 ```
 
-`propsMap` is a function which selects from received props, eventually transforms them, and sets expected props of the model.
+`propsMap` maps received props for ServicedComponent to expected props for the model.
+In this example, prop `initialValues`'s `myObject` is selected as the expected prop for ObjectModel.
 
 ### Use injected props
 
