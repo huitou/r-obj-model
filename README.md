@@ -57,7 +57,7 @@ const ServicedComponent = connect(ObjectModel, NAME, propsMap)(TargetComponent);
 ```
 
 `propsMap` maps received props for ServicedComponent to expected props for the model.
-In this example, prop `initialValues`'s `myObject` is selected as the expected prop for ObjectModel.
+In this example, prop `initialValues`'s `myObject` is mapped as the expected prop for ObjectModel.
 
 ### Use injected props
 
