@@ -28,7 +28,7 @@ modelName: {
 
 ## What props are expected?
 
-ObjectModel optionally expects a prop called `initial` which provides initial object value.
+ObjectModel optionally expects a prop called `initial` which provides initial value of the model.
 
 In case it is not present, the initial value is set to `{}`.
 
@@ -49,9 +49,14 @@ import { ObjectModel } from 'r-obj-model';
 
 ```javascript
 const NAME = 'NameOfService';
+const propsMap = (props) => ({
+    initial: initialValues.myObject,
+});
 
-const ServicedComponent = connect(ObjectModel, NAME)(TargetComponent);
+const ServicedComponent = connect(ObjectModel, NAME, propsMap)(TargetComponent);
 ```
+
+`propsMap` is a function which selects from received props, eventually transforms them, and sets expected props of the model.
 
 ### Use injected props
 
