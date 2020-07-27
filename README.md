@@ -50,7 +50,7 @@ import { ObjectModel } from 'r-obj-model';
 ```javascript
 const NAME = 'NameOfService';
 const propsMap = (props) => ({
-    initial: initialValues.myObject,
+    initial: props?.initialValues?.myObject,
 });
 
 const ServicedComponent = connect(ObjectModel, NAME, propsMap)(TargetComponent);
